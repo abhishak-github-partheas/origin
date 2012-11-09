@@ -1,0 +1,11 @@
+<%= link_to("<<back to list", {:action => 'list'}) %>
+
+<h2> Delete Subject </h2>
+<h3> Press 'Delete Subject' button to delete this subject </h3>
+
+<%= form_for(:subject, :url => {:action => 'destroy', :id => @subject.id}) do |f| %>
+first name: <%= f.text_field(:sub_first_name) %><br /><br />
+last name:  <%= f.text_field(:sub_last_name) %><br /><br />
+created at: <%= f.text_field(:created_at) %><br /><br />
+            <%= submit_tag("Delete Subject") %>
+<% end %>

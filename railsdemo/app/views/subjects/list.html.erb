@@ -1,0 +1,20 @@
+ Notice: <%= flash[:notice] %><br/><br/>
+
+<%= link_to("Add a new subject", {:action => 'new'}) %>
+<table>
+	<tr>
+		<th>id</th>
+		<th>sub_first_name</th>
+		<th>Actions</th>
+    </tr>
+    <% @subjects.each do |subject|%>
+    <tr>
+    	<td><%= subject.id %></td>
+    	<td><%= subject.sub_first_name %></td>
+    	<td><%= link_to("Show", {:action => 'show', :id => subject.id}) %>
+    		<%= link_to("Edit", {:action => 'edit', :id =>subject.id}) %>
+    		<%= link_to("Delete", {:action => 'delete', :id => subject.id}) %>
+    	</td>
+    </tr>
+    <% end %>
+</table>

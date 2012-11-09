@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple CMS| <%= @page_title || 'Admin Area' %></title>
+  <%= stylesheet_link_tag('public','admin', :media => "all") %>
+  <%= javascript_include_tag "application2" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<footer>
+	<p> @example.com/ Abhishak Kapoor</p>
+</footer>
+
+</body>
+</html>

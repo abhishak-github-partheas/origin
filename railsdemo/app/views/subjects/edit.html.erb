@@ -1,0 +1,6 @@
+<%= form_for(:subject, :url => {:action => 'update', :id => @subject.id}) do |f| %>
+first name: <%= f.text_field(:sub_first_name) %><br /><br />
+last name:   <%= f.text_field(:sub_last_name) %><br /><br />
+created at: <%= f.text_field(:created_at) %><br /><br />
+            <%= submit_tag("Update Subject") %>
+<% end %>

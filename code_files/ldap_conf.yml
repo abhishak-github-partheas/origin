@@ -1,0 +1,10 @@
+LdapHost:      'ipa.partheas.net'
+LdapPort:      389
+method:        :anonymous 
+username:      'cn=users,cn=accounts,dc=partheas,dc=net'
+password:      ''
+treebase:      'dc=partheas,dc=net'
+attrs:          ['displayname', 'employeestartdate', 'employeeenddate']
+url:           'http://172.16.17.18:8080/libreplan/ws/rest/resources'
+DaemonHost:    'localhost'
+DaemonPort:    2005

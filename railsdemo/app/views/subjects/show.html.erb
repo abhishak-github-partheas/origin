@@ -1,0 +1,18 @@
+<%= link_to("<<back to list", {:action => 'list'}) %>
+
+<table>
+	<tr>
+		<th>id</th>
+		<th>created_at</th>
+		<th>updated_at</th>
+		<th>sub_first_name</th>
+		<th>sub_last_name</th>
+    </tr>
+    <tr>
+    	<td><%= @subject.id %></td>
+    	<td><%= @subject.created_at %></td>
+    	<td><%= @subject.updated_at %></td>
+    	<td><%= @subject.sub_first_name %></td>
+    	<td><%= @subject.sub_last_name %></td>
+    </tr>
+</table>

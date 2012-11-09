@@ -1,0 +1,17 @@
+<h1>Demo#Hello</h1>
+<p>Finally!!! Hello world !!!</p>
+
+ID: <%= @id %><br />
+Next Page: <%= @page.to_i + 1 %><br />
+
+<%= 1 + 1 %>
+
+<% 3.times do%>
+  value: <%= 'xxx' %>
+<% end %>
+
+<% @array.each do |n|%>
+  value: <%= n %><br />
+<% end %> 
+
+<%= link_to("My first link", {:action => 'index'}) %> 
