@@ -68,7 +68,8 @@ class ZombiesController < ApplicationController
       end
     end
   end
-
+  
+  #comments are black in color under this color scheme.
   # DELETE /zombies/1
   # DELETE /zombies/1.json
   def destroy
