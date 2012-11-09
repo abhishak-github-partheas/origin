@@ -1,5 +1,7 @@
 Railsdemo::Application.routes.draw do
   
+  resources :newapps
+
   resources :zombies
 
     root :to => "demo#index"

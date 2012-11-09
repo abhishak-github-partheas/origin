@@ -1,0 +1,29 @@
+<h1>Listing newapps</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Data</th>
+    <th>Id</th>
+    <th>Value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @newapps.each do |newapp| %>
+  <tr>
+    <td><%= newapp.name %></td>
+    <td><%= newapp.data %></td>
+    <td><%= newapp.id %></td>
+    <td><%= newapp.value %></td>
+    <td><%= link_to 'Show', newapp %></td>
+    <td><%= link_to 'Edit', edit_newapp_path(newapp) %></td>
+    <td><%= link_to 'Destroy', newapp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Newapp', new_newapp_path %>
