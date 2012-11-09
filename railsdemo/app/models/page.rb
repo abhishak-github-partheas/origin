@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
   
-  attr_accessible :page_number, :page_quality
+  attr_accessible :page_number, :page_quality, :created_at
   
   belongs_to :subject
   #has_many :sections
