@@ -1,4 +1,5 @@
 class ZombiesController < ApplicationController
+  # Comments are black
   # GET /zombies
   # GET /zombies.json
   def index
